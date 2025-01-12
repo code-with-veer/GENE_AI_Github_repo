@@ -1,0 +1,183 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#main{
+  position: relative;
+  overflow: hidden;
+}
+
+#page{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+
+#page1{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+
+#page2{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+
+#page3{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+
+canvas{
+  position: relative;
+  z-index: 9;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#loop{
+  display: flex;
+  position: absolute;
+  top: 30%;
+  height: 25%;
+  width: 100%;
+  font-size: 80px;
+  white-space: nowrap;
+  font-family: gilroy;
+}
+
+#loop>h1{
+font-weight: 400;
+animation: anie;
+animation-duration: 30s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+ 
+}
+
+#loop>h1>span{
+  -webkit-text-stroke: 4px black;
+  color: transparent;
+}
+
+@keyframes anie{
+  0%{
+    transform: translatex(0%)
+  }
+  100%{
+    transform: translatex(-200%)
+  }
+}
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7%;
+  width: 100%;
+  position: fixed;
+  z-index:99;
+  padding: 0px 30px;
+}
+#nav>h3{
+  font-family: gilroy;
+  font-weight: 400;
+  font-size: 45px;
+  left: 2%;
+}
+#nav>button{
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  
+}
+#page>h2{
+  position: relative;
+  top: 60%;
+  font-family: gilroy;
+  font-weight: 400;
+  color: #7c7c7c;
+  font-size: 20.75px;
+  left: 7px;
+}
+#page>h3{
+  position: relative;
+  top: 59%;
+  left: 20%;
+  font-family: gilroy;
+  font-weight: 500;
+  color: #7c7c7c;
+}
+
+#page1>#right-text{
+  position: absolute;
+  top: 20%;
+  left: 1%;
+}
+#page1>#right-text>h1{
+  line-height: 1.5;
+  font-size: 40px;
+}
+#page1>#left-text{
+  position: absolute;
+  top: 48%;
+  right: 1%;
+  text-align: end;
+}
+#page1>#left-text>h1{
+  font-size: 32.45px;
+  line-height: 1.5;
+}
+#page2>#text1{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+#page2>#text1>h1{
+  font-size: 50px;
+  line-height: 1.5;
+}
+#page2>#text2{
+  position: absolute;
+  top: 55%;
+  right: 3%;
+  text-align: end;
+}
+#page2>#text2>p{
+  color: #7c7c7c;
+  font-weight: 400;
+}
+#page3>#text3{
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  text-align: end;
+}
+#page3>#text3>h1{
+  font-size: 70px;
+
+}
+#page3>#text4{
+  position: absolute;
+  top: 35%;
+
+  text-align: start;
+}
+#page3>#text4>p{
+  font-size: 18px;
+  color: #7c7c7c;
+}
