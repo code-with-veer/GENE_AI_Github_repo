@@ -447,5 +447,5 @@ gsap.to("#page3",{
 const tryButton = document.getElementById('try');
 
 tryButton.onclick = function (){
-  window.open("trynow.html","_self");
+  window.open("try-button.html","_self");
 }
